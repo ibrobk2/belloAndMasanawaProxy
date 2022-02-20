@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The getElementsByTagName() Method</h2>
+
+<h2 onclick="action();">This is a paragraph.</h2>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+<script>
+    function action(){
+document.getElementsByTagName("h2")[1].style.color = "red";
+}
+</script>
+
+</body>
+</html>

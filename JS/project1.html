@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USELESS AND USEFUL APP</title>
+    <link rel="stylesheet" href="../project.css">
+    
+</head>
+<body>
+    <div class="container">
+        <img src="../pic_bulboff.gif" alt="" id="pic">
+        <h3 id="txt">Bulb is OFF</h3>
+        <button id="on" onclick="on();">ON</button>
+        <button id="off" onclick="off();">OFF</button>
+    </div>
+    <script>
+        function on(){
+            document.getElementById('pic').src="../pic_bulbon.gif";
+            document.getElementById('txt').innerHTML="Light is ON";
+            document.getElementById('txt').style.color="green";
+
+        }
+
+        function off(){
+            document.getElementById('pic').src="../pic_bulboff.gif";
+            document.getElementById('txt').innerHTML="Light is OFF";
+            document.getElementById('txt').style.color="red";
+
+        }
+    </script>
+</body>
+</html>
